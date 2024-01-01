@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: sticky; 
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* the logo and list of navbar */
+#logo img {
+    height: 76px;
+    margin: 10px 25px
+}
+#navbar ul{
+    display: flex;
+    font-family: 'DM Serif Display', serif;
+   
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+  background-color: white;
+}
+
+/* Home section */
+#home{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(./Assets/image/bg1.jpg) no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* services */
+
+#services{
+    margin: 14px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    background-color: rgb(208, 197, 197);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: cursive;
+}
+
+
+/* Client section */
+#client-section{
+   
+    position: relative;
+}
+
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url(./Assets/image/bg.jpg);
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 34px;
+}
+/* Contact section */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input , #contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   background: url(./Assets/image/contact.jpg) no-repeat center center/cover;
+}
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'DM Serif Display', serif;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'DM Serif Display', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(127, 12, 12);
+    color: white;
+    margin: 17px;
+    font: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
